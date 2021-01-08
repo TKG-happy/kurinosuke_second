@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KURIcafe</title>
+
+  <!-- sanitize.css -->
+  <link href="https://unpkg.com/sanitize.css/typography.css" rel="stylesheet"/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/14407772c6.js" crossorigin="anonymous"></script>
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- header -->
+  <header id="header">
+    <div class="header__logo">
+      <a href="#"><h1>KURIcafe</h1></a>
+    </div>
+
+    <!-- SP画面用のヘッダーメニュー -->
+    <nav id="sp-header__menus" class="sp-header__menus">
+      <i class="fas fa-bars"></i>
+    </nav>
+
+    <!-- タブレット、PC画面用のヘッダーメニュー -->
+    <nav class="pc-header__menus">
+      <ul>
+        <li><a href="#goods">見出し1</a></li>
+        <li><a href="#features">見出し2</a></li>
+        <li><a href="#news">見出し3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- アイコンclick後のSP画面用のメニュー -->
+  <nav id="sp-menus" class="sp-menus js-hide">
+    <i class="fas fa-times"></i>
+    <ul>
+      <li><a href="#goods">見出し1</a></li>
+      <li><a href="#features">見出し2</a></li>
+      <li><a href="#news">見出し3</a></li>
+    </ul>
+  </nav>
+
+  <!-- メインビュー -->
+  <section id="mv" class="mv">
+    <h2>キャッチコピーが入ります</h2>
+  </section>
+
+  <!-- main -->
+  <main>
+    <!-- お店の紹介 -->
+      <section class="introduction">
+        <div class="container">
+          <h3>タイトルが入ります</h3>
+          <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。<br>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。<br>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        </div>
+      </section>
+
+      <!-- おすすめ商品 -->
+      <section id="goods" class="goods">
+        <div class="container">
+          <h3>見出し1</h3>
+          <article class="goods__articles">
+            <!-- 各商品 -->
+            <article class="goods__article">
+              <img src="img/pancake01.jpg" alt="苺が乗ったパンケーキ">
+              <h4>タイトルが入ります</h4>
+              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            </article>
+
+            <article class="goods__article">
+              <img src="img/pancake02.jpg" alt="苺が乗ったパンケーキ">
+              <h4>タイトルが入ります</h4>
+              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            </article>
+
+            <article class="goods__article">
+              <img src="img/sandwich.jpg" alt="苺が乗ったパンケーキ">
+              <h4>タイトルが入ります</h4>
+              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            </article>
+          </article>
+        </div>
+      </section>
+
+      <!-- お店の特徴 -->
+      <section id="features" class="features">
+        <div class="container">
+          <h3>見出し2</h3>
+          <!-- 各特徴 -->
+          <section class="feature">
+            <figure><img src="img/cafe01.jpg" alt="店内の画像"></figure>
+            <div class="feature__info">
+              <h4>タイトルが入ります</h4>
+              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+
+              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              <div class="btn feature__btn01">MORE</div>
+            </div>
+          </section>
+          <section class="feature">
+            <figure><img src="img/cafe02.jpg" alt="店内の画像"></figure>
+            <div class="feature__info">
+              <h4>タイトルが入ります</h4>
+              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+
+              <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              <div class="btn feature__btn02">MORE</div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- NEWS -->
+      <article id="news" class="news">
+        <div class="container">
+          <h3>見出し3</h3>
+          <!-- 各ニュース記事 -->
+          <article class="news__article">
+            <time>2020.00.00</time>
+            <p>タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
+          </article>
+          <article class="news__article">
+            <time>2020.00.00</time>
+            <p>タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
+          </article>
+          <article class="news__article">
+            <time>2020.00.00</time>
+            <p>タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
+          </article>
+          <article class="news__article">
+            <time>2020.00.00</time>
+            <p>タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
+          </article>
+          <article class="news__article">
+            <time>2020.00.00</time>
+            <p>タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。</p>
+          </article>
+          <div class="btn news__btn">MORE</div>
+        </div>
+      </article>
+
+      <!-- map -->
+      <section class="map">
+        <div class="container">
+          <div class="map__info">
+            <!-- Googleマップ -->
+            <div class="map__info__map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8278533985003!2d139.76493611474615!3d35.68124053757981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1605753689427!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <!-- map情報 -->
+            <div class="map__info__text">
+              <h1>KURIcafe</h1>
+              <p>&#x3012;000-0000<br>東京都&#x00D7;&#x00D7;区&#x00D7;&#x00D7;&#x25CF;丁目&#x25CF;番&#x25CF;号</p>
+              <p>TEL ： 03-0000-0000 (代表)<br>FAX ： 03-0000-0000</p>
+              <!-- SNSアイコン -->
+              <div class="sns-icons">
+                <img src="img/facebook.png" alt="facebookのアイコン">
+                <img src="img/twitter.png" alt="twitterのアイコン">
+                <img src="img/instagram.png" alt="instagramのアイコン">
+                <img src="img/line.png" alt="lineのアイコン">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <!-- footer -->
+  <footer id="footer">
+    <p>&copy; 2020 KURIcafe Co., Ltd.</p>
+  </footer>
+
+  <!-- ページ上部に戻るボタン -->
+  <div id="to-pageTop" class="to-pageTop">
+    <a href="#">
+      <i class="fas fa-chevron-circle-up"></i>
+    </a>
+  </div>
+
+  <!-- jQueryの読み込み -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <!-- jQueryファイル -->
+  <script src="js/script.js"></script>
+</body>
+</html>

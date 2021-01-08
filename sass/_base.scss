@@ -1,0 +1,350 @@
+// 基本的な設定
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+  "游ゴシック", "Yu Gothic", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 36px;
+  color: #5d3c28;
+  line-height: 0.42;
+}
+
+h2 {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0.63;
+  text-align: center;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #5d3c28;
+  text-align: center;
+  line-height: 0.68;
+  letter-spacing: 2.2px;
+}
+
+h4 {
+  font-size: 18px;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333;
+  line-height: 0.83;
+  letter-spacing: 1.8px;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  vertical-align: bottom;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  transition: opacity 0.3s;
+  &:hover {
+    opacity: 0.6;
+    background-color: rgba(233, 233, 233, 0.3);
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+// MOREボタンの共通設定
+.btn {
+  cursor: pointer;
+  user-select: none;
+  margin: 0 auto;
+  width: 240px;
+  height: 65px;
+  line-height: 65px;
+  background-color: #5d3c28;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+}
+
+// header
+header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  margin-left: 4%;
+}
+
+// SP画面用のヘッダーメニュー
+.sp-header__menus {
+  margin-right: 5.3%;
+  svg {
+    font-size: 52px;
+    cursor: pointer;
+  }
+}
+
+// タブレット、PC画面用のヘッダーメニュー
+.pc-header__menus {
+  display: none;
+}
+
+// アイコンclick後のSP画面用のメニュー
+.sp-menus {
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s;
+  svg {
+    display: block;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-right: 6.8%;
+    margin-left: auto;
+    font-size: 52px;
+  }
+  ul {
+    margin-top: 100px;
+    text-align: center;
+    transition: margin-top 0.5s;
+  }
+  li {
+    width: 20%;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 20px;
+  }
+
+  &.js-hide {
+    ul {
+      margin-top: 120px;
+    }
+  }
+}
+
+// メインビュー
+.mv {
+  user-select: none;
+  height: 350px;
+  background-image: url('img/mv-sp.jpg');
+  background-position: center;
+  background-size: cover;
+  h2 {
+    line-height: 350px;
+  }
+}
+
+// jQueryで表示・非表示を切り替え
+.js-hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+// main
+// お店の紹介
+.introduction {
+  padding-top: 59px;
+  padding-bottom: 55px;
+  h3 {
+    margin-bottom: 37px;
+  }
+  p {
+    line-height: 2.5;
+  }
+}
+
+// おすすめ商品
+.goods {
+  background-color: #fcf5f1;
+  padding-top: 58px;
+  padding-bottom: 27px;
+  h3 {
+    margin-bottom: 47px;
+  }
+  &__article {
+    margin-bottom: 36px;
+    h4 {
+      margin-top: 15px;
+      margin-bottom: 17px;
+    }
+    p {
+      line-height: 1.5;
+      letter-spacing: 1.6px;
+    }
+  }
+}
+
+// お店の特徴
+.features {
+  padding-top: 60px;
+  h3 {
+    margin-bottom: 44px;
+  }
+}
+
+.feature {
+  figure {
+    margin: 0;
+  }
+
+  &__info {
+    margin-bottom: 36px;
+    h4 {
+      margin-top: 20px;
+      margin-bottom: 18px;
+    }
+    p {
+      line-height: 1.5;
+      letter-spacing: 1.6px;
+    }
+  }
+
+  &__btn01 {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  &__btn02 {
+    margin-top: 26px;
+    margin-bottom: 56px;
+  }
+}
+
+// NEWS
+.news {
+  background-color: #fcf5f1;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  h3 {
+    margin-bottom: 24px;
+  }
+  &__article {
+    border-bottom: rgba(207, 207, 207, 0.3) solid 1px;
+    padding-top: 13px;
+    padding-bottom: 16px;
+    time {
+      color: #8c8c8c;
+      font-size: 14px;
+      line-height: 1.43;
+    }
+    p {
+      margin-top: 12px;
+      line-height: 1.25;
+    }
+  }
+  &__btn {
+    margin-top: 27px;
+  }
+}
+
+// map
+.map {
+  &__info {
+    text-align: center;
+    margin: 60px auto;
+    &__map {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      &::before {
+        content: '';
+        display: block;
+        padding-top: 75%;
+      }
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    
+    // map情報
+    &__text {
+      h1 {
+        margin-top: 46px;
+      }
+      p {
+        margin-top: 20px;
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        line-height: 1.5;
+        & + p {
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+}
+
+.sns-icons {
+  width: 53%;
+  margin: 37px auto 60px;
+  display: flex;
+  justify-content: space-between;
+  img {
+    cursor: pointer;
+    width: 17.5%;
+  }
+}
+
+// footer
+footer {
+  height: 80px;
+  background-color: #210e03;
+  text-align: center;
+  p {
+    font-size: 12px;
+    line-height: 80px;
+    letter-spacing: 1.2px;
+    color: #fff;
+  }
+}
+
+// ページ上部に戻るボタン
+.to-pageTop {
+  font-size: 60px;
+  opacity: 0.3;
+  border-radius: 50%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  &:hover {
+    opacity: 0.5;
+  }
+}
